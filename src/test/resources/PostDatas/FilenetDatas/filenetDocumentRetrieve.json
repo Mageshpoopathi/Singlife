@@ -1,0 +1,6 @@
+{
+  "sourceSystemID": "RPA",
+  "objectStores": ["AVSINGLOBS"],
+  "searchKeyValuePairs": "DocumentType='plmUWWKSHT'",
+  "documentClasses": ["InternalUW"]
+}

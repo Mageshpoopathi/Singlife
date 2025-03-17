@@ -1,12 +1,12 @@
-package com.singlife.json.runners;
+package com.singlife.ActiveMQ.runner;
 
 
-import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "src/test/resources/features/PreMigration",
-        glue = "com.singlife.json.stepDefinition",
+        glue = "com.singlife.ActiveMQ.stepDefinition",
         dryRun = false,
         plugin = {"pretty", "html:target/cucumber-reports"}
 )

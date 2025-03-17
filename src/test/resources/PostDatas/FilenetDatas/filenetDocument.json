@@ -1,0 +1,16 @@
+{
+  "sourceSystemID": "RPA",
+  "objectStore": "AVSINGLOBS",
+  "spoolName": "INTUW_SGLIF",
+  "metaDataKeyValuePairs":
+  {
+    "Process Indicator": "SGLIFXXLBACTN",
+    "Time stamp": "2025-03-17.18.47.58",
+    "DocumentType": "plmUWWKSHT",
+    "UserID": "RPAUAT04",
+    "Policy Number": "31332554",
+    "Reference Number": "31332554"
+  },
+  "fileName": "01495050_202402020713.pdf",
+  "documentPath": "/fcmu/rpa/20240202/01495050/01495050_202402020713.pdf"
+}

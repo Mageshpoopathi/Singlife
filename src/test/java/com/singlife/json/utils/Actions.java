@@ -12,7 +12,6 @@ public class Actions {
     }
     public static void bodyValidation(Response response){
         response.then().log().body();
-        System.out.println("body data Validation:");
     }
 
 //    public static void jsonSchemaValidation(Response response, String schemaFilePath) {

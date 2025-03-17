@@ -13,32 +13,26 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
-
-
-
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-testng</artifactId>
             <version>7.10.0</version> <!-- Use the latest version -->
             <scope>test</scope>
         </dependency>
-
-        <!-- Rest Assured -->
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest</artifactId>
             <version>3.0</version>
             <scope>test</scope>
-        </dependency>    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.11.0</version>
             <scope>test</scope>
-        </dependency>    <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
@@ -96,7 +90,22 @@
             <artifactId>poi</artifactId>
             <version>5.2.5</version>
         </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.9.1</version> <!-- Replace with the latest version -->
+        </dependency>
+
+        <!-- WebDriverManager to manage browser drivers automatically -->
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>3.8.1</version>
+        </dependency>
+
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
