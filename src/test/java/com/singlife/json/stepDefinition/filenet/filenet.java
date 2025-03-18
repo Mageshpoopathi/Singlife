@@ -4,7 +4,6 @@ import com.singlife.UIAutomation.BaseClass;
 import com.singlife.json.utils.Actions;
 import com.singlife.json.utils.Operations;
 import io.cucumber.java.en.*;
-import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 import io.restassured.response.Response;
 import org.openqa.selenium.WebDriver;
 
