@@ -22,7 +22,7 @@ public class api {
         headers.put("Accept", "application/json");
         headers.put("Authorization","Basic ZmNtdWFwaXVzZXI6ZmNtdWFwaSNwd2RAMjAyMQ==");
         Response res=Operations.PostWithHeaders("https://fcmuapp.ecm.uat.intranet.singlife.com/v1/notes/archival",
-                "src/test/resources/PostDatas/FilenetDatas/filenetNotes.json",headers);
+                "src/test/resources/PostMethodDatas/FilenetDatas/filenetNotes.json",headers);
         Actions.statusCodeValidation(res,200);
         Actions.bodyValidation(res);
     }
@@ -32,7 +32,7 @@ public class api {
         headers.put("Accept", "application/json");
         headers.put("Authorization","Basic ZmNtdWFwaXVzZXI6ZmNtdWFwaSNwd2RAMjAyMQ==");
         Response res=Operations.PostWithHeaders("https://fcmuapp.ecm.uat.intranet.singlife.com/v1/documents/archival",
-                "src/test/resources/PostDatas/FilenetDatas/filenetDocument.json",headers);
+                "src/test/resources/PostMethodDatas/FilenetDatas/filenetDocument.json",headers);
         Actions.statusCodeValidation(res,200);
         Actions.bodyValidation(res);
     }
@@ -42,7 +42,7 @@ public class api {
         headers.put("Accept", "application/json");
         headers.put("Authorization","Basic ZmNtdWFwaXVzZXI6ZmNtdWFwaSNwd2RAMjAyMQ==");
         Response res=Operations.PostWithHeaders("https://fcmuapp.ecm.uat.intranet.singlife.com/v1/documents/archival",
-                "src/test/resources/PostDatas/FilenetDatas/filenetDocumentRetrieve.json",headers);
+                "src/test/resources/PostMethodDatas/FilenetDatas/filenetDocumentRetrieve.json",headers);
         Actions.statusCodeValidation(res,200);
         Actions.bodyValidation(res);
     }

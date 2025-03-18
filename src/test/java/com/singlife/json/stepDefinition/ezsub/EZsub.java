@@ -1,4 +1,4 @@
-package com.singlife.json.stepDefinition;
+package com.singlife.json.stepDefinition.ezsub;
 
 import com.singlife.json.utils.Actions;
 import com.singlife.json.utils.Operations;
@@ -16,7 +16,7 @@ public class EZsub {
         headers.put("Accept", "application/json");
         headers.put("Authorization","Basic ZmNtdWFwaXVzZXI6ZmNtdWFwaSNwd2RAMjAyMQ==");
         Response res=Operations.PostWithHeaders("https://fcmuapp.ecm.uat.intranet.singlife.com/v1/notes/archival",
-                "src/test/resources/PostDatas/FilenetDatas/filenetNotes.json",headers);
+                "src/test/resources/PostMethodDatas/FilenetDatas/filenetNotes.json",headers);
         Actions.statusCodeValidation(res,200);
         Actions.bodyValidation(res);
     }

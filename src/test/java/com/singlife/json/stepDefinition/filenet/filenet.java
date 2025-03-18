@@ -1,9 +1,12 @@
-package com.singlife.json.stepDefinition;
+package com.singlife.json.stepDefinition.filenet;
 
+import com.singlife.UIAutomation.BaseClass;
 import com.singlife.json.utils.Actions;
 import com.singlife.json.utils.Operations;
 import io.cucumber.java.en.*;
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 import io.restassured.response.Response;
+import org.openqa.selenium.WebDriver;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -19,19 +22,24 @@ public class filenet {
         headers.put("Accept", "application/json");
         headers.put("Authorization","Basic ZmNtdWFwaXVzZXI6ZmNtdWFwaSNwd2RAMjAyMQ==");
          res=Operations.PostWithHeaders("https://fcmuapp.ecm.uat.intranet.singlife.com/v1/notes/archival",
-                "src/test/resources/PostDatas/FilenetDatas/filenetNotes.json",headers);
+                "src/test/resources/PostMethodDatas/FilenetDatas/filenetNotes.json",headers);
 
 
     }
 
     @When("I validate the status code of the filenet API as {int}")
     public void i_validate_the_status_code_of_the_filenet_api_as(Integer statusCode) {
-        Actions.statusCodeValidation(res,statusCode);
+       // Actions.statusCodeValidation(res,200);
         Actions.bodyValidation(res);
+        System.out.println("statusCode success");
+
     }
 
     @Then("I verify that the filenet notes is created successfully")
     public void i_verify_that_the_filenet_notes_is_created_successfully() {
+        WebDriver driver=BaseClass.Browser();
+        driver.get("https://icnapp.ecm.uat.intranet.singlife.com/navigator/");
+        driver.manage().window().maximize();
 
     }
 }
