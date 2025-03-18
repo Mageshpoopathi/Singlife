@@ -1,19 +1,24 @@
 package com.singlife.json;
 
 
+import com.singlife.UIAutomation.BaseClass;
 import com.singlife.json.utils.Actions;
 import com.singlife.json.utils.Operations;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import org.openqa.selenium.WebDriver;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class api {
     public static void main(String[] args) {
-        filenetNoteArchival();
-        filenetDocumentArchival();
-        filenetDocumentRetrieval();
+//        filenetNoteArchival();
+//        filenetDocumentArchival();
+//        filenetDocumentRetrieval();
+        WebDriver driver= BaseClass.Browser();
+        driver.get("https://www.google.com/");
+        driver.manage().window().maximize();
     }
 
     public static void filenetNoteArchival(){
